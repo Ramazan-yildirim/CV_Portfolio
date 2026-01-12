@@ -2,20 +2,25 @@
 
 Bu proje, profesyonel CV hazırlamak için geliştirilmiş, Docker tabanlı ve modüler yapıda bir LaTeX şablonudur. Tek komutla hem Türkçe hem de İngilizce CV'nizi PDF formatında üretebilir, LaTeX kurulumuyla uğraşmadan içeriği kolayca yönetebilirsiniz.
 
-## 👁️ CV Önizleme / Preview
+## 👁️ CV Önizleme & İndir / Preview & Download
 
-### 🇹🇷 Türkçe CV
+<details open>
+<summary><strong>🇹🇷 Türkçe CV</strong></summary>
+<br>
 <img src="output/cv_tr_preview.png" width="800" alt="Türkçe CV Önizleme">
+<br><br>
+<a href="output/cv_tr.pdf"><strong>📂 PDF İndir (cv_tr.pdf)</strong></a>
+<br><br>
+</details>
 
-### 🇬🇧 English CV
+<details>
+<summary><strong>🇬🇧 English CV</strong></summary>
+<br>
 <img src="output/cv_en_preview.png" width="800" alt="English CV Preview">
-
-## 📥 İndirme / Download
-
-| Dil | Dosya |
-|-----|-------|
-| 🇹🇷 Türkçe | [**📂 PDF İndir (cv_tr.pdf)**](output/cv_tr.pdf) |
-| 🇬🇧 English | [**📂 Download PDF (cv_en.pdf)**](output/cv_en.pdf) |
+<br><br>
+<a href="output/cv_en.pdf"><strong>📂 Download PDF (cv_en.pdf)</strong></a>
+<br><br>
+</details>
 
 ## ✨ Proje Özellikleri
 
