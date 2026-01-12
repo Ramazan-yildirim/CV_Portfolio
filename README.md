@@ -5,7 +5,7 @@ Bu proje, profesyonel CV hazırlamak için geliştirilmiş, Docker tabanlı ve m
 ## 👁️ CV Önizleme & İndir / Preview & Download
 
 <details open>
-<summary><strong>🇹🇷 Türkçe CV</strong></summary>
+<summary><h3>🇹🇷 Türkçe CV</h3></summary>
 <br>
 <img src="output/cv_tr_preview.png" width="800" alt="Türkçe CV Önizleme">
 <br><br>
@@ -14,7 +14,7 @@ Bu proje, profesyonel CV hazırlamak için geliştirilmiş, Docker tabanlı ve m
 </details>
 
 <details>
-<summary><strong>🇬🇧 English CV</strong></summary>
+<summary><h3>🇬🇧 English CV</h3></summary>
 <br>
 <img src="output/cv_en_preview.png" width="800" alt="English CV Preview">
 <br><br>
@@ -61,7 +61,3 @@ docker-compose --profile watch up
 ├── docker-compose.yml
 └── build.bat
 ```
-
-## 📝 Lisans
-
-MIT License
