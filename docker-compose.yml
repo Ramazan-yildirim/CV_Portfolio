@@ -1,0 +1,21 @@
+# ============================================
+# Docker Compose - CV Builder
+# ============================================
+# Tek komutla PDF üretimi için yapılandırma
+# ============================================
+
+services:
+  cv-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: latex-cv-builder
+    volumes:
+      - ./src:/cv/src:ro # Kaynak dosyalar (read-only)
+      - ./output:/cv/output # PDF çıktı dizini
+    working_dir: /cv
+    command: >
+      sh -c "cd /cv/src && 
+             pdflatex -output-directory=/cv/output main.tex && 
+             pdflatex -output-directory=/cv/output main.tex"
+    # Not: pdflatex 2 kez çalıştırılır (referanslar için)

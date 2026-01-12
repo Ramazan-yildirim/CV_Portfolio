@@ -1,0 +1,42 @@
+% ============================================
+% MAIN CV DOCUMENT
+% Ana giriş dosyası - tüm bölümleri birleştirir
+% ============================================
+
+\documentclass[a4paper,11pt]{article}
+
+% Paketler
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+% Sayfa ayarları
+\geometry{margin=1.5cm}
+\pagestyle{empty}
+
+% Renk tanımları
+\definecolor{primary}{RGB}{0, 79, 144}
+\definecolor{secondary}{RGB}{100, 100, 100}
+
+% Bölüm formatı
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% ============================================
+% DOCUMENT BEGIN
+% ============================================
+\begin{document}
+
+% Bölümleri dahil et
+\input{sections/header}
+\input{sections/experience}
+\input{sections/education}
+\input{sections/skills}
+
+\end{document}

@@ -1,0 +1,3 @@
+# CV Project Output
+Bu klasör Docker tarafından üretilen PDF çıktılarını içerir.
+*.pdf dosyaları .gitignore ile takip dışı bırakılabilir.

@@ -1,0 +1,56 @@
+# 📄 LaTeX CV - Docker Builder
+
+Modüler LaTeX CV projesi. Docker ile tek komutla PDF üretimi.
+
+## 🚀 Hızlı Başlangıç
+
+```bash
+# Windows
+.\build.bat
+
+# Linux/MacOS
+chmod +x build.sh && ./build.sh
+```
+
+**Çıktı:** `output/main.pdf`
+
+## 📁 Proje Yapısı
+
+```
+├── src/
+│   ├── main.tex              # Ana dosya
+│   └── sections/
+│       ├── header.tex        # İsim ve iletişim
+│       ├── experience.tex    # İş deneyimi
+│       ├── education.tex     # Eğitim
+│       └── skills.tex        # Yetenekler
+├── output/                   # PDF çıktıları
+├── Dockerfile
+├── docker-compose.yml
+└── build.bat / build.sh
+```
+
+## ✏️ CV'yi Düzenleme
+
+`src/sections/` klasöründeki `.tex` dosyalarını düzenle:
+
+| Dosya | İçerik |
+|-------|--------|
+| `header.tex` | İsim, email, telefon, LinkedIn |
+| `experience.tex` | İş deneyimleri |
+| `education.tex` | Eğitim bilgileri |
+| `skills.tex` | Teknik yetenekler |
+
+## ➕ Yeni Bölüm Ekleme
+
+1. `src/sections/` içinde yeni `.tex` dosyası oluştur
+2. `src/main.tex` dosyasına `\input{sections/yenidosya}` ekle
+
+## 🔧 Gereksinimler
+
+- Docker Desktop
+- Git (opsiyonel)
+
+## 📝 Lisans
+
+MIT License
