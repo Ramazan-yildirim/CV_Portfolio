@@ -1,26 +1,45 @@
 # 📄 LaTeX CV - Docker Builder
 
+Bu proje, profesyonel CV hazırlamak için geliştirilmiş, Docker tabanlı ve modüler yapıda bir LaTeX şablonudur. Tek komutla hem Türkçe hem de İngilizce CV'nizi PDF formatında üretebilir, LaTeX kurulumuyla uğraşmadan içeriği kolayca yönetebilirsiniz.
 
-Modüler LaTeX CV projesi. Docker ile tek komutla PDF üretimi.
+## 👁️ CV Önizleme / Preview
 
-## 👁️ Önizleme / Preview
+### 🇹🇷 Türkçe CV
+<img src="output/cv_tr_preview.png" width="800" alt="Türkçe CV Önizleme">
 
-| Türkçe CV | English CV |
-|:---:|:---:|
-| <img src="output/cv_tr_preview.png" width="400" alt="Türkçe CV Önizleme"> | <img src="output/cv_en_preview.png" width="400" alt="English CV Preview"> |
-| [📂 PDF İndir (TR)](output/cv_tr.pdf) | [📂 Download PDF (EN)](output/cv_en.pdf) |
+### 🇬🇧 English CV
+<img src="output/cv_en_preview.png" width="800" alt="English CV Preview">
 
-## 🚀 Hızlı Başlangıç
+## 📥 İndirme / Download
+
+| Dil | Dosya |
+|-----|-------|
+| 🇹🇷 Türkçe | [**📂 PDF İndir (cv_tr.pdf)**](output/cv_tr.pdf) |
+| 🇬🇧 English | [**📂 Download PDF (cv_en.pdf)**](output/cv_en.pdf) |
+
+## ✨ Proje Özellikleri
+
+- **Modüler Yapı**: CV bölümleri (Eğitim, Deneyim, Yetenekler) ayrı dosyalarda tutulur, yönetimi kolaydır.
+- **Docker Tabanlı**: Bilgisayarınıza LaTeX kurmanıza gerek kalmaz.
+- **Otomatik Önizleme**: Her derlemede güncel PNG önizlemeleri oluşturulur.
+- **Çoklu Dil Desteği**: Aynı anda Türkçe ve İngilizce çıktı üretir.
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **LaTeX**: Dizgi ve şablonlama.
+- **Docker**: Konteynerizasyon ve çevre bağımsızlığı.
+- **Bash/Batch Script**: Derleme otomasyonu.
+- **Poppler Utils (pdftoppm)**: PDF'ten görüntüye dönüştürme.
+
+## 🚀 Nasıl Build Edilir?
 
 ```bash
 # Tek seferlik derleme + PDF açma
 .\build.bat
 
-# Watch mode - her 5 saniyede otomatik derleme
+# Watch mode - her 5 saniyede otomatik güncellenen derleme
 docker-compose --profile watch up
 ```
-
-**Çıktı:** `output/main.pdf` (her seferinde aynı dosya güncellenir)
 
 ## 📁 Proje Yapısı
 
@@ -32,32 +51,11 @@ docker-compose --profile watch up
 │       ├── experience.tex    # İş deneyimi
 │       ├── education.tex     # Eğitim
 │       └── skills.tex        # Yetenekler
-├── output/                   # PDF çıktıları
+├── output/                   # PDF ve PNG çıktıları
 ├── Dockerfile
 ├── docker-compose.yml
-└── build.bat / build.sh
+└── build.bat
 ```
-
-## ✏️ CV'yi Düzenleme
-
-`src/sections/` klasöründeki `.tex` dosyalarını düzenle:
-
-| Dosya | İçerik |
-|-------|--------|
-| `header.tex` | İsim, email, telefon, LinkedIn |
-| `experience.tex` | İş deneyimleri |
-| `education.tex` | Eğitim bilgileri |
-| `skills.tex` | Teknik yetenekler |
-
-## ➕ Yeni Bölüm Ekleme
-
-1. `src/sections/` içinde yeni `.tex` dosyası oluştur
-2. `src/main.tex` dosyasına `\input{sections/yenidosya}` ekle
-
-## 🔧 Gereksinimler
-
-- Docker Desktop
-- Git (opsiyonel)
 
 ## 📝 Lisans
 
