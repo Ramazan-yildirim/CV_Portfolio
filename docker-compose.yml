@@ -15,8 +15,8 @@ services:
     working_dir: /cv
     command: >
       sh -c "cd /cv/src && 
-             pdflatex -interaction=nonstopmode -output-directory=/cv/output main.tex && 
-             pdflatex -interaction=nonstopmode -output-directory=/cv/output main.tex"
+             pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_tr.tex && 
+             pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_en.tex"
 
   # Watch mode - dosya değişikliğinde otomatik derleme
   cv-watch:
@@ -31,13 +31,16 @@ services:
     command: >
       sh -c "
         echo '========================================';
-        echo '  LaTeX CV - Watch Mode';
-        echo '  Dosya degisikliklerini izliyor...';
-        echo '  Ctrl+C ile durdur';
+        echo '  LaTeX CV - Dual Watch Mode';
+        echo '  Monitoring changes...';
+        echo '  Ctrl+C to stop';
         echo '========================================';
         
         while true; do
-          cd /cv/src && pdflatex -interaction=nonstopmode -output-directory=/cv/output main.tex;
+          cd /cv/src;
+          pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_tr.tex > /dev/null;
+          pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_en.tex > /dev/null;
+          echo '';
           echo '';
           echo '[OK] PDF guncellendi: output/main.pdf';
           echo 'Bekleniyor... (5 saniye)';

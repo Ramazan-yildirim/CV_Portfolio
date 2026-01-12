@@ -22,12 +22,14 @@ docker-compose down --volumes --remove-orphans 2>nul
 
 echo.
 echo ========================================
-echo    PDF uretildi: output/main.pdf
+echo [OK] PDF uretildi: output\cv_tr.pdf
+echo [OK] PDF uretildi: output\cv_en.pdf
 echo ========================================
 echo.
 
-REM PDF'i varsayılan okuyucuda aç
-echo PDF aciliyor...
-start "" "output\main.pdf"
+REM PDF'leri varsayılan okuyucuda aç
+echo PDFler aciliyor...
+start "" "output\cv_tr.pdf"
+start "" "output\cv_en.pdf"
 
 pause

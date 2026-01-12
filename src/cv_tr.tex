@@ -1,0 +1,47 @@
+% ============================================
+% ATS UYUMLU CV - Ana Dosya
+% ============================================
+% Sade, parse edilebilir, tek sayfa
+% ============================================
+
+\documentclass[a4paper,11pt]{article}
+
+% Core Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel} % Switched to Turkish
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem} % For better list control
+
+% Page Settings - Optimized maximize space
+\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+\pagestyle{empty}
+
+% Hyperlink Settings (ATS Friendly)
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfauthor={Ramazan Yildirim},
+    pdftitle={Ramazan Yildirim - Bilgisayar Mühendisliği Öğrencisi}
+}
+
+% Section Formatting
+\titleformat{\section}{\Large\bfseries\uppercase}{}{0em}{}[\hrule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% List Settings - Tighten up lists
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt}
+
+% ============================================
+\begin{document}
+
+\input{sections/tr/header}
+\input{sections/tr/education}
+\input{sections/tr/skills}
+\input{sections/tr/projects}
+\input{sections/tr/languages}
+
+\end{document}

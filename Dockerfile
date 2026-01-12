@@ -14,4 +14,4 @@ RUN tlmgr update --self && \
     tlmgr install fontawesome5
 
 # Varsayılan komut
-CMD ["pdflatex", "-output-directory=/cv/output", "/cv/src/main.tex"]
+CMD ["sh", "-c", "pdflatex -output-directory=/cv/output /cv/src/cv_tr.tex && pdflatex -output-directory=/cv/output /cv/src/cv_en.tex"]

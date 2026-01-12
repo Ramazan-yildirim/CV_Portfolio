@@ -20,7 +20,7 @@ echo [%time%] Derleniyor...
 docker-compose up --abort-on-container-exit 2>nul
 
 REM PDF açık mı kontrol et ve güncelle
-echo [%time%] PDF guncellendi: output/main.pdf
+echo [%time%] PDFler guncellendi: output/cv_tr.pdf, output/cv_en.pdf
 
 REM 3 saniye bekle ve tekrar kontrol et
 timeout /t 3 /nobreak >nul
