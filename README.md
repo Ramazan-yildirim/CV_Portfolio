@@ -7,7 +7,7 @@ Modüler LaTeX CV projesi. Docker ile tek komutla PDF üretimi.
 
 | Türkçe CV | English CV |
 |:---:|:---:|
-| <img src="assets/cv-tr-preview.png" width="400" alt="Türkçe CV Önizleme"> | <img src="assets/cv-en-preview.png" width="400" alt="English CV Preview"> |
+| <img src="output/cv_tr_preview.png" width="400" alt="Türkçe CV Önizleme"> | <img src="output/cv_en_preview.png" width="400" alt="English CV Preview"> |
 | [📂 PDF İndir (TR)](output/cv_tr.pdf) | [📂 Download PDF (EN)](output/cv_en.pdf) |
 
 ## 🚀 Hızlı Başlangıç

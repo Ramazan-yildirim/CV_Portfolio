@@ -16,7 +16,10 @@ services:
     command: >
       sh -c "cd /cv/src && 
              pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_tr.tex && 
-             pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_en.tex"
+             pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_en.tex &&
+             cd /cv/output &&
+             pdftoppm -png -singlefile cv_tr.pdf cv_tr_preview &&
+             pdftoppm -png -singlefile cv_en.pdf cv_en_preview"
 
   # Watch mode - dosya değişikliğinde otomatik derleme
   cv-watch:
