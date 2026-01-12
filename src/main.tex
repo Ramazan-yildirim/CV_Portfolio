@@ -1,41 +1,41 @@
 % ============================================
-% MAIN CV DOCUMENT
-% Ana giriş dosyası - tüm bölümleri birleştirir
+% ATS UYUMLU CV - Ana Dosya
+% ============================================
+% Sade, parse edilebilir, tek sayfa
 % ============================================
 
 \documentclass[a4paper,11pt]{article}
 
-% Paketler
+% Temel paketler
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[turkish]{babel}
 \usepackage{geometry}
 \usepackage{hyperref}
-\usepackage{fontawesome5}
 \usepackage{titlesec}
-\usepackage{xcolor}
 
 % Sayfa ayarları
-\geometry{margin=1.5cm}
+\geometry{margin=2cm}
 \pagestyle{empty}
 
-% Renk tanımları
-\definecolor{primary}{RGB}{0, 79, 144}
-\definecolor{secondary}{RGB}{100, 100, 100}
+% Hyperlink ayarları (ATS için siyah)
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black
+}
 
-% Bölüm formatı
-\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{12pt}{8pt}
+% Bölüm formatı (sade)
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\hrule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
 
-% ============================================
-% DOCUMENT BEGIN
 % ============================================
 \begin{document}
 
-% Bölümleri dahil et
 \input{sections/header}
-\input{sections/experience}
 \input{sections/education}
 \input{sections/skills}
+\input{sections/projects}
+\input{sections/languages}
 
 \end{document}
