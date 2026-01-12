@@ -5,14 +5,14 @@ Modüler LaTeX CV projesi. Docker ile tek komutla PDF üretimi.
 ## 🚀 Hızlı Başlangıç
 
 ```bash
-# Windows
+# Tek seferlik derleme + PDF açma
 .\build.bat
 
-# Linux/MacOS
-chmod +x build.sh && ./build.sh
+# Watch mode - her 5 saniyede otomatik derleme
+docker-compose --profile watch up
 ```
 
-**Çıktı:** `output/main.pdf`
+**Çıktı:** `output/main.pdf` (her seferinde aynı dosya güncellenir)
 
 ## 📁 Proje Yapısı
 

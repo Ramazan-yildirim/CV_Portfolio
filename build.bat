@@ -1,14 +1,13 @@
 @echo off
 REM ============================================
-REM CV PDF Builder Script (Windows)
+REM CV PDF Builder + Önizleme (Windows)
 REM ============================================
-REM Tek komutla PDF üretimi
-REM Kullanım: build.bat
+REM PDF derler ve varsayılan PDF okuyucuda açar
 REM ============================================
 
 echo.
 echo ========================================
-echo    LaTeX CV Builder
+echo    LaTeX CV Builder + Preview
 echo ========================================
 echo.
 
@@ -26,5 +25,9 @@ echo ========================================
 echo    PDF uretildi: output/main.pdf
 echo ========================================
 echo.
+
+REM PDF'i varsayılan okuyucuda aç
+echo PDF aciliyor...
+start "" "output\main.pdf"
 
 pause
