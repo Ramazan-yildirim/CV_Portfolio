@@ -9,7 +9,7 @@ Bu proje, profesyonel CV hazırlamak için geliştirilmiş, Docker tabanlı ve m
 <br>
 <img src="output/cv_tr_preview.png" width="800" alt="Türkçe CV Önizleme">
 <br><br>
-<a href="output/cv_tr.pdf"><strong>📂 PDF İndir (cv_tr.pdf)</strong></a>
+<a href="output/Ramazan_Yildirim_CV_TR.pdf"><strong>📂 PDF İndir (Ramazan_Yildirim_CV_TR.pdf)</strong></a>
 <br><br>
 </details>
 
@@ -18,7 +18,7 @@ Bu proje, profesyonel CV hazırlamak için geliştirilmiş, Docker tabanlı ve m
 <br>
 <img src="output/cv_en_preview.png" width="800" alt="English CV Preview">
 <br><br>
-<a href="output/cv_en.pdf"><strong>📂 Download PDF (cv_en.pdf)</strong></a>
+<a href="output/Ramazan_Yildirim_CV_EN.pdf"><strong>📂 Download PDF (Ramazan_Yildirim_CV_EN.pdf)</strong></a>
 <br><br>
 </details>
 
