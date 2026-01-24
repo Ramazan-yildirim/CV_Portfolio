@@ -1,0 +1,66 @@
+\documentclass[a4paper,10pt]{article}
+
+% Basics
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fontawesome5} % For icons
+\usepackage{lmodern}      % Clean font
+
+% Geometry
+\geometry{
+    left=20mm,
+    right=20mm,
+    top=20mm,
+    bottom=20mm
+}
+
+% No page numbers
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+}
+
+% Section Formatting
+\titleformat{\section}
+    {\Large\bfseries} % format
+    {}                          % label
+    {0em}                       % sep
+    {}                          % before-code
+    [\titlerule]                % after-code
+
+\titleformat{\subsection}
+    {\large\bfseries}
+    {}
+    {0em}
+    {}
+
+% Custom commands
+\newcommand{\datedsubsection}[2]{%
+  \subsection[#1]{#1 \hfill \textmd{\small #2}}%
+}
+
+\begin{document}
+
+\input{metadata}
+\input{sections/cover}
+\input{sections/profile}
+\input{sections/skills_details}
+\input{sections/technologies}
+\input{sections/projects}
+\input{sections/experience}
+\newpage
+\input{sections/education}
+\input{sections/closing}
+
+\end{document}

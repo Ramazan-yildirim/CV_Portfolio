@@ -1,0 +1,13 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./src:/workspace
+      - ./output:/output
+    # -pvc: Preview Continuously (watch mode)
+    # -view=none: Do not try to open a viewer (headless)
+    command: [ "-pdf", "-pvc", "-view=none", "-outdir=/output", "-interaction=nonstopmode", "main.tex" ]
+    # Removed user: "1000:1000" to avoid Windows permission complexities; 
+    # Docker Desktop for Windows handles binds automatically.
