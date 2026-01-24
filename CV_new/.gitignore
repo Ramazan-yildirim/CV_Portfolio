@@ -1,0 +1,39 @@
+# ============================================
+# LaTeX CV Project - Git Ignore
+# ============================================
+
+# LaTeX geçici dosyaları
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# PDF çıktıları (isteğe bağlı - CV'yi paylaşmak istersen kaldır)
+# output/*.pdf
+
+# Editör dosyaları
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+.docker/

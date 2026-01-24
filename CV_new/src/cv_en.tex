@@ -1,0 +1,43 @@
+\documentclass[a4paper,11pt]{article}
+
+% Core Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel} % English
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% Page Settings
+\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+\pagestyle{empty}
+
+% Hyperlink Settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfauthor={Ramazan Yildirim},
+    pdftitle={Ramazan Yildirim - Computer Engineering Student}
+}
+
+% Section Formatting
+\titleformat{\section}{\Large\bfseries\uppercase}{}{0em}{}[\hrule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% List Settings
+\setlist[itemize]{leftmargin=*, nosep}
+
+% ============================================
+\begin{document}
+
+\input{sections/en/header}
+\input{sections/en/summary}
+\input{sections/en/education}
+\input{sections/en/experience}
+\input{sections/en/skills}
+\input{sections/en/projects}
+\input{sections/en/languages}
+
+\end{document}

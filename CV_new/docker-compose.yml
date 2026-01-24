@@ -1,0 +1,55 @@
+# ============================================
+# Docker Compose - CV Builder with Watch
+# ============================================
+
+services:
+  # Tek seferlik build
+  cv-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: latex-cv-builder
+    volumes:
+      - ./src:/cv/src:ro
+      - ./output:/cv/output
+    working_dir: /cv
+    command: >
+      sh -c "cd /cv/src && 
+             pdflatex -interaction=nonstopmode -output-directory=/cv/output -jobname=Ramazan_Yildirim_CV_TR cv_tr.tex && 
+             pdflatex -interaction=nonstopmode -output-directory=/cv/output -jobname=Ramazan_Yildirim_CV_EN cv_en.tex &&
+             cd /cv/output &&
+             pdftoppm -png -singlefile Ramazan_Yildirim_CV_TR.pdf cv_tr_preview &&
+             pdftoppm -png -singlefile Ramazan_Yildirim_CV_EN.pdf cv_en_preview"
+
+  # Watch mode - dosya değişikliğinde otomatik derleme
+  cv-watch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: latex-cv-watch
+    volumes:
+      - ./src:/cv/src:ro
+      - ./output:/cv/output
+    working_dir: /cv
+    command: >
+      sh -c "
+        echo '========================================';
+        echo '  LaTeX CV - Dual Watch Mode';
+        echo '  Monitoring changes...';
+        echo '  Ctrl+C to stop';
+        echo '========================================';
+        
+        while true; do
+          cd /cv/src;
+          pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_tr.tex > /dev/null;
+          pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_en.tex > /dev/null;
+          echo '';
+          echo '';
+          echo '[OK] PDF guncellendi: output/main.pdf';
+          echo 'Bekleniyor... (5 saniye)';
+          echo '';
+          sleep 5;
+        done
+      "
+    profiles:
+      - watch
