@@ -1,0 +1,33 @@
+name: Automate CV & Portfolio Assets
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'CV/src/**'
+      - 'portfolio/src/**'
+      - '.github/workflows/automate.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build CV Assets
+        run: |
+          cd CV
+          docker compose up --abort-on-container-exit
+
+      - name: Build Portfolio Assets
+        run: |
+          cd portfolio
+          docker compose up portfolio-builder --abort-on-container-exit
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add CV/output/*.pdf CV/output/*.png portfolio/output/*.pdf portfolio/output/*.png
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update PDF and Preview assets [skip ci]" && git push)

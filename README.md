@@ -55,3 +55,22 @@ Projelerimin, staj deneyimlerimin ve teknik detayların görsel ağırlıklı su
 *   **[portfolio/](./portfolio)**: Portfolyo projesinin kaynak kodları ve görselleri.
 
 Her iki klasör de kendi içinde bağımsız olarak çalıştırılabilir ve derlenebilir. Detaylı kurulum ve derleme talimatları için ilgili klasörlerin içindeki `README.md` dosyalarını inceleyebilirsiniz.
+
+---
+
+## 🛠️ Geliştirme ve Otomasyon
+
+Bu repository, değişikliklerinizi otomatik olarak takip eden ve çıktıları (PDF & PNG) güncelleyen bir sistemle donatılmıştır.
+
+### Yerel Kullanım (Windows)
+Kök dizindeki şu betikleri kullanabilirsiniz:
+*   **`.\build_all.bat`**: Tüm CV ve Portfolyo dosyalarını tek seferde derler ve önizlemeleri günceller.
+*   **`.\watch_all.bat`**: Dosya değişikliklerini izler ve her kaydettiğinizde çıktıları anında yeniler (Docker gereklidir).
+
+### CI/CD (GitHub Actions)
+Repository'ye bir GitHub Action (`automate.yml`) eklenmiştir. Siz projenin kaynak kodlarında (`src/` klasörü) bir değişiklik yapıp pushladığınızda:
+1.  GitHub Actions otomatik olarak çalışır.
+2.  Docker üzerinde CV ve Portfolyo'yu yeniden derler.
+3.  Güncellenen PDF ve resimleri otomatik olarak commit eder.
+
+Bu sayede sadece kodları güncellemeniz yeterlidir; çıktılar her zaman güncel kalacaktır.
