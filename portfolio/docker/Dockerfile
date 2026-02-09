@@ -2,6 +2,7 @@ FROM texlive/texlive:latest
 
 WORKDIR /workspace
 
-# Install minimal tools if needed, but texlive:latest is usually comprehensive
-# We just need to ensure we can build the project
+# Install poppler-utils for pdftoppm (preview generation)
+RUN apt-get update && apt-get install -y poppler-utils && rm -rf /var/lib/apt/lists/*
+
 ENTRYPOINT ["latexmk", "-pdf", "-outdir=../output", "main.tex"]

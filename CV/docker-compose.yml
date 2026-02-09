@@ -41,11 +41,13 @@ services:
         
         while true; do
           cd /cv/src;
-          pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_tr.tex > /dev/null;
-          pdflatex -interaction=nonstopmode -output-directory=/cv/output cv_en.tex > /dev/null;
+          pdflatex -interaction=nonstopmode -output-directory=/cv/output -jobname=Ramazan_Yildirim_CV_TR cv_tr.tex > /dev/null;
+          pdflatex -interaction=nonstopmode -output-directory=/cv/output -jobname=Ramazan_Yildirim_CV_EN cv_en.tex > /dev/null;
+          cd /cv/output;
+          pdftoppm -png -singlefile Ramazan_Yildirim_CV_TR.pdf cv_tr_preview > /dev/null;
+          pdftoppm -png -singlefile Ramazan_Yildirim_CV_EN.pdf cv_en_preview > /dev/null;
           echo '';
-          echo '';
-          echo '[OK] PDF guncellendi: output/main.pdf';
+          echo \"[$(date +%H:%M:%S)] [OK] PDF ve Onizlemeler guncellendi.\";
           echo 'Bekleniyor... (5 saniye)';
           echo '';
           sleep 5;
