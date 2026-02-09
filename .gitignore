@@ -1,0 +1,36 @@
+# ============================================
+# CV Portfolio Monorepo - Git Ignore
+# ============================================
+
+# LaTeX geçici dosyaları
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# Editör dosyaları
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+.docker/
