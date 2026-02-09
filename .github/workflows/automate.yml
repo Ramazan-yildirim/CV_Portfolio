@@ -8,6 +8,9 @@ on:
       - 'portfolio/src/**'
       - '.github/workflows/automate.yml'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
