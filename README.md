@@ -1,76 +1,68 @@
-# Ramazan Yıldırım
-### Bilgisayar Mühendisliği Öğrencisi | Full Stack Geliştirici
+# CV & Portfolio Development Monorepo
 
-[![Email](https://img.shields.io/badge/Email-ramazanyldr0103%40gmail.com-red?style=flat-square&logo=gmail)](mailto:ramazanyldr0103@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Ramazan--yildirim-black?style=flat-square&logo=github)](https://github.com/Ramazan-yildirim)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ramazan%20Yıldırım-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/ramazanyldr/)
+Bu repository, **LaTeX** tabanlı Özgeçmiş (CV) ve Portfolyo projelerinin kaynak kodlarını ve otomatik derleme araçlarını içerir.
 
-Bu repository, profesyonel **Özgeçmiş (CV)** ve **Portfolyo** çalışmalarımı içeren tek bir kaynaktır. Her iki proje de **LaTeX** kullanılarak oluşturulmuş ve **Docker** ile otomatik olarak derlenebilir yapıdadır.
+## 📄 İndirilebilir İçerik (PDF)
 
----
+| Doküman | Dil | İndir |
+| :--- | :--- | :--- |
+| **CV** | Türkçe | [📥 İndir (PDF)](CV/output/Ramazan_Yildirim_CV_TR.pdf) |
+| **CV** | English | [📥 Download (PDF)](CV/output/Ramazan_Yildirim_CV_EN.pdf) |
+| **Portfolyo** | Türkçe | [📥 İndir (PDF)](portfolio/output/Ramazan_Yildirim_Portfolyo.pdf) |
 
-## 📄 Özgeçmiş (CV)
+## 👁️ Önizlemeler
 
-Bilgisayar Mühendisliği öğrencisi olarak edindiğim tecrübeler, yetkinlikler ve eğitim bilgilerimi içerir.
-
-> [!TIP]
-> **[📥 Türkçe CV İndir (PDF)](CV/output/Ramazan_Yildirim_CV_TR.pdf)** | **[📥 English CV Download (PDF)](CV/output/Ramazan_Yildirim_CV_EN.pdf)**
-
-<details>
-<summary><h3>👁️ CV Önizlemesi (Tıkla ve Gör)</h3></summary>
-
-| Türkçe | English |
-| :---: | :---: |
-| <img src="CV/output/cv_tr_preview.png" width="400" alt="Türkçe CV"> | <img src="CV/output/cv_en_preview.png" width="400" alt="English CV"> |
-
+<details open>
+<summary><h3>CV Önizlemesi</h3></summary>
+<br>
+<div align="center">
+  <img src="CV/output/cv_tr_preview.png" width="45%" alt="Türkçe CV">
+  <img src="CV/output/cv_en_preview.png" width="45%" alt="English CV">
+</div>
 </details>
 
----
-
-## 🎨 Portfolyo
-
-Projelerimin, staj deneyimlerimin ve teknik detayların görsel ağırlıklı sunumunu içerir.
-
-> [!TIP]
-> **[📥 Portfolyo İndir (PDF)](portfolio/output/Ramazan_Yildirim_Portfolyo.pdf)**
-
 <details>
-<summary><h3>👁️ Portfolyo Önizlemesi (Tıkla ve Gör)</h3></summary>
-
+<summary><h3>Portfolyo Önizlemesi</h3></summary>
+<br>
 <div align="center">
   <img src="portfolio/output/preview-1.png" width="45%" alt="Sayfa 1">
   <img src="portfolio/output/preview-2.png" width="45%" alt="Sayfa 2">
-  <br>
-  <img src="portfolio/output/preview-3.png" width="45%" alt="Sayfa 3">
-  <img src="portfolio/output/preview-4.png" width="45%" alt="Sayfa 4">
 </div>
-
 </details>
 
 ---
 
-## 📂 Proje Yapısı
+## 📂 Proje Yapısı (Teknik Detaylar)
 
-*   **[CV/](./CV)**: Özgeçmiş projesinin kaynak kodları (`.tex` dosyaları) ve derleme araçları.
-*   **[portfolio/](./portfolio)**: Portfolyo projesinin kaynak kodları ve görselleri.
+*   **`CV/`**: Özgeçmiş projesi.
+    *   `src/`: LaTeX kaynak kodları.
+    *   `src/metadata.tex`: Merkezi kişisel veri dosyası.
+*   **`portfolio/`**: Portfolyo projesi.
+    *   `src/`: LaTeX kaynak kodları ve görseller.
 
-Her iki klasör de kendi içinde bağımsız olarak çalıştırılabilir ve derlenebilir. Detaylı kurulum ve derleme talimatları için ilgili klasörlerin içindeki `README.md` dosyalarını inceleyebilirsiniz.
+## 🚀 Kurulum ve Derleme (Windows)
 
----
+Projeyi bilgisayarınıza klonladıktan sonra aşağıdaki yöntemlerle PDF çıktılarını üretebilirsiniz.
 
-## 🛠️ Geliştirme ve Otomasyon
+### Ön Gereksinimler
+*   **Docker Desktop** (Yüklü ve çalışıyor olmalı)
 
-Bu repository, değişikliklerinizi otomatik olarak takip eden ve çıktıları (PDF & PNG) güncelleyen bir sistemle donatılmıştır.
+### Tek Komutla Derleme
+Kök dizindeki `build_all.bat` dosyasını çalıştırarak her iki projeyi de derleyebilirsiniz:
 
-### Yerel Kullanım (Windows)
-Kök dizindeki şu betikleri kullanabilirsiniz:
-*   **`.\build_all.bat`**: Tüm CV ve Portfolyo dosyalarını tek seferde derler ve önizlemeleri günceller.
-*   **`.\watch_all.bat`**: Dosya değişikliklerini izler ve her kaydettiğinizde çıktıları anında yeniler (Docker gereklidir).
+```powershell
+.\build_all.bat
+```
+*Bu işlem Docker konteynerlerini ayağa kaldırır, LaTeX derlemesini yapar ve PDF dosyalarını `CV/output` ve `portfolio/output` klasörlerine kaydeder.*
 
-### CI/CD (GitHub Actions)
-Repository'ye bir GitHub Action (`automate.yml`) eklenmiştir. Siz projenin kaynak kodlarında (`src/` klasörü) bir değişiklik yapıp pushladığınızda:
-1.  GitHub Actions otomatik olarak çalışır.
-2.  Docker üzerinde CV ve Portfolyo'yu yeniden derler.
-3.  Güncellenen PDF ve resimleri otomatik olarak commit eder.
+## 🛠️ Geliştirme
 
-Bu sayede sadece kodları güncellemeniz yeterlidir; çıktılar her zaman güncel kalacaktır.
+### Kişisel Bilgileri Düzenleme
+Ad, E-posta, Telefon gibi bilgileri değiştirmek için sadece şu dosyayı düzenlemeniz yeterlidir:
+*   `CV/src/metadata.tex`
+
+### Otomatik Derleme (CI/CD)
+Bu repoda **GitHub Actions** kuruludur. `main` dalına yapılan her push işleminde:
+1.  Sanal sunucuda temiz bir derleme yapılır.
+2.  Oluşan PDF dosyaları **Artifact** olarak saklanır (Actions sekmesinden indirilebilir).
+3.  Önizleme görselleri otomatik güncellenir.

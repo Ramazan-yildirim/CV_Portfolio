@@ -25,9 +25,23 @@ jobs:
           cd portfolio
           docker compose up portfolio-builder --abort-on-container-exit
 
+      - name: Upload CV Artifacts
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdfs
+          path: CV/output/*.pdf
+
+      - name: Upload Portfolio Artifacts
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-pdfs
+          path: portfolio/output/*.pdf
+
       - name: Commit and Push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add CV/output/*.pdf CV/output/*.png portfolio/output/*.pdf portfolio/output/*.png
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update PDF and Preview assets [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(assets): auto-update PDF and Preview assets [skip ci]" && git push)
