@@ -1,36 +1,37 @@
-# One-time build with previews
-portfolio-builder:
-  build:
-    context: .
-    dockerfile: docker/Dockerfile
-  container_name: portfolio-builder
-  volumes:
-    - ./src:/workspace
-    - ./output:/output
-  working_dir: /workspace
-  command: >
-    sh -c "latexmk -pdf -outdir=/output -jobname=Ramazan_Yildirim_Portfolyo main.tex && 
-           cd /output && 
-           pdftoppm -png Ramazan_Yildirim_Portfolyo.pdf preview"
+services:
+  # One-time build with previews
+  portfolio-builder:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: portfolio-builder
+    volumes:
+      - ./src:/workspace
+      - ./output:/output
+    working_dir: /workspace
+    command: >
+      sh -c "latexmk -pdf -outdir=/output -jobname=Ramazan_Yildirim_Portfolyo main.tex && 
+             cd /output && 
+             pdftoppm -png Ramazan_Yildirim_Portfolyo.pdf preview"
 
-# Watch mode with previews
-portfolio-watch:
-  build:
-    context: .
-    dockerfile: docker/Dockerfile
-  container_name: portfolio-watch
-  volumes:
-    - ./src:/workspace
-    - ./output:/output
-  working_dir: /workspace
-  command: >
-    sh -c "
-      echo 'Monitoring changes and updating previews...';
-      while true; do
-        latexmk -pdf -interaction=nonstopmode -outdir=/output -jobname=Ramazan_Yildirim_Portfolyo main.tex > /dev/null;
-        cd /output;
-        pdftoppm -png Ramazan_Yildirim_Portfolyo.pdf preview > /dev/null;
-        echo \"[$(date +%H:%M:%S)] [OK] Portfolyo ve Onizlemeler guncellendi.\";
-        sleep 5;
-      done
-    "
+  # Watch mode with previews
+  portfolio-watch:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: portfolio-watch
+    volumes:
+      - ./src:/workspace
+      - ./output:/output
+    working_dir: /workspace
+    command: >
+      sh -c "
+        echo 'Monitoring changes and updating previews...';
+        while true; do
+          latexmk -pdf -interaction=nonstopmode -outdir=/output -jobname=Ramazan_Yildirim_Portfolyo main.tex > /dev/null;
+          cd /output;
+          pdftoppm -png Ramazan_Yildirim_Portfolyo.pdf preview > /dev/null;
+          echo \"[$(date +%H:%M:%S)] [OK] Portfolyo ve Onizlemeler guncellendi.\";
+          sleep 5;
+        done
+      "
