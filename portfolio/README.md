@@ -10,8 +10,8 @@ Detaylı inceleme için PDF dosyasını indirebilirsiniz:
 ## 🚀 Projeler Listesi
 Bu portfolyoda yer alan bazı projeler:
 
-1.  **TEKNOFEST Otonom Su Altı Aracı (AUV):** ROS 2 ve Gazebo ile simülasyon ve otonom sürüş algoritmaları.
-2.  **Dijital Diş Dünyası:** Diş hekimleri için Vue.js ve Laravel tabanlı yönetim platformu.
+1.  **TEKNOFEST Otonom Su Altı Aracı (AUV):** Python tarafında yazılım çalışmaları; proje KTR değerlendirmesinde elendi.
+2.  **Dijital Diş Dünyası:** Vue.js ve Laravel tabanlı aktif web platformu: https://dijitaldisdunyasi.com/.
 3.  **Otomatik LaTeX CV Oluşturucu:** Docker ve CI/CD süreçlerini içeren otomatik dokümantasyon projesi.
 
 ## 👁️ Önizleme
