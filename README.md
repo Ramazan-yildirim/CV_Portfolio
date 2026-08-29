@@ -40,8 +40,6 @@ Bu repository, **LaTeX** tabanlı Özgeçmiş (CV) ve Portfolyo projelerinin kay
   <br>
   <img src="portfolio/output/preview-3.png" width="45%" alt="Sayfa 3">
   <img src="portfolio/output/preview-4.png" width="45%" alt="Sayfa 4">
-  <br>
-  <img src=portfolio/output/preview-5.png width=45% alt=Sayfa-5>
 </div>
 </details>
 

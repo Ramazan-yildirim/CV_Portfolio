@@ -30,6 +30,4 @@ Bu portfolyoda yer alan bazı projeler:
 | :---: | :---: |
 | ![Sayfa 3](output/preview-3.png) | ![Sayfa 4](output/preview-4.png) |
 
-![Sayfa 5](output/preview-5.png)
-
 </details>

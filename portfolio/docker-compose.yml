@@ -12,6 +12,7 @@ services:
     command: >
       sh -c "latexmk -pdf -outdir=/output -jobname=Ramazan_Yildirim_Portfolyo main.tex && 
              cd /output && 
+             rm -f preview-*.png &&
              pdftoppm -png Ramazan_Yildirim_Portfolyo.pdf preview"
 
   # Watch mode with previews
@@ -30,6 +31,7 @@ services:
         while true; do
           latexmk -pdf -interaction=nonstopmode -outdir=/output -jobname=Ramazan_Yildirim_Portfolyo main.tex > /dev/null;
           cd /output;
+          rm -f preview-*.png;
           pdftoppm -png Ramazan_Yildirim_Portfolyo.pdf preview > /dev/null;
           echo \"[$(date +%H:%M:%S)] [OK] Portfolyo ve Onizlemeler guncellendi.\";
           sleep 5;
