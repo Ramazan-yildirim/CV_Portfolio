@@ -2,11 +2,14 @@
 
 Yapay zeka, NLP ve LLM tabanlı uygulamalar ile full-stack web geliştirmeye odaklanan Bilgisayar Mühendisliği öğrencisi olarak deneyimlerimi, projelerimi ve teknik yetkinliklerimi bu dokümanda sunuyorum.
 
-## 📄 CV İndir & İncele
+## 📄 CV İndir ve İncele
 
-Aşağıdaki bağlantılardan CV'min en güncel halini PDF formatında indirebilirsiniz:
-*   [📥 **Türkçe CV İndir (PDF)**](output/Ramazan_Yildirim_CV_TR.pdf)
-*   [📥 **English CV Download (PDF)**](output/Ramazan_Yildirim_CV_EN.pdf)
+| Dil | Önizleme | Doğrudan İndir |
+| :--- | :---: | :---: |
+| Türkçe | [GitHub'da görüntüle](output/Ramazan_Yildirim_CV_TR.pdf) | [⬇️ Türkçe CV'yi indir](https://raw.githubusercontent.com/Ramazan-yildirim/CV_Portfolio/main/CV/output/Ramazan_Yildirim_CV_TR.pdf) |
+| English | [View on GitHub](output/Ramazan_Yildirim_CV_EN.pdf) | [⬇️ Download English CV](https://raw.githubusercontent.com/Ramazan-yildirim/CV_Portfolio/main/CV/output/Ramazan_Yildirim_CV_EN.pdf) |
+
+> **Mobil kullanım:** Doğrudan indirme bağlantıları GitHub'ın PDF önizleme sayfasını atlar. Gerekirse bağlantıya basılı tutup harici tarayıcıda açın.
 
 ## 📌 Öne Çıkanlar
 

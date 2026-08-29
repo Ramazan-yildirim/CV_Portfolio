@@ -2,13 +2,15 @@
 
 Bu repository, **LaTeX** tabanlı Özgeçmiş (CV) ve Portfolyo projelerinin kaynak kodlarını ve otomatik derleme araçlarını içerir.
 
-## 📄 İndirilebilir İçerik (PDF)
+## 📄 CV ve Portfolyo
 
-| Doküman | Dil | İndir |
-| :--- | :--- | :--- |
-| **CV** | Türkçe | [📥 İndir (PDF)](CV/output/Ramazan_Yildirim_CV_TR.pdf) |
-| **CV** | English | [📥 Download (PDF)](CV/output/Ramazan_Yildirim_CV_EN.pdf) |
-| **Portfolyo** | Türkçe | [📥 İndir (PDF)](portfolio/output/Ramazan_Yildirim_Portfolyo.pdf) |
+| Doküman | Dil | Önizleme | Doğrudan İndir |
+| :--- | :--- | :---: | :---: |
+| **CV** | Türkçe | [GitHub'da görüntüle](CV/output/Ramazan_Yildirim_CV_TR.pdf) | [⬇️ PDF indir](https://raw.githubusercontent.com/Ramazan-yildirim/CV_Portfolio/main/CV/output/Ramazan_Yildirim_CV_TR.pdf) |
+| **CV** | English | [View on GitHub](CV/output/Ramazan_Yildirim_CV_EN.pdf) | [⬇️ Download PDF](https://raw.githubusercontent.com/Ramazan-yildirim/CV_Portfolio/main/CV/output/Ramazan_Yildirim_CV_EN.pdf) |
+| **Portfolyo** | Türkçe | [GitHub'da görüntüle](portfolio/output/Ramazan_Yildirim_Portfolyo.pdf) | [⬇️ PDF indir](https://raw.githubusercontent.com/Ramazan-yildirim/CV_Portfolio/main/portfolio/output/Ramazan_Yildirim_Portfolyo.pdf) |
+
+> **Mobil kullanım:** “Doğrudan İndir” bağlantısı depo önizlemesini atlayarak PDF dosyasını açar. GitHub mobil uygulaması bağlantıyı indirme yerine görüntülerse bağlantıya basılı tutup harici tarayıcıda açın.
 
 ## Güncel İçerik Özeti
 

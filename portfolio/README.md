@@ -4,8 +4,11 @@ Eğitim hayatım ve kariyerim boyunca geliştirdiğim projelerin, katıldığım
 
 ## 📥 Portfolyo İndir
 
-Detaylı inceleme için PDF dosyasını indirebilirsiniz:
-*   [📥 **Portfolyo PDF İndir**](output/Ramazan_Yildirim_Portfolyo.pdf)
+| Önizleme | Doğrudan İndir |
+| :---: | :---: |
+| [GitHub'da görüntüle](output/Ramazan_Yildirim_Portfolyo.pdf) | [⬇️ Portfolyo PDF'yi indir](https://raw.githubusercontent.com/Ramazan-yildirim/CV_Portfolio/main/portfolio/output/Ramazan_Yildirim_Portfolyo.pdf) |
+
+> **Mobil kullanım:** Doğrudan indirme bağlantısı GitHub'ın PDF önizleme sayfasını atlar. Gerekirse bağlantıya basılı tutup harici tarayıcıda açın.
 
 ## 🚀 Projeler Listesi
 Bu portfolyoda yer alan bazı projeler:
