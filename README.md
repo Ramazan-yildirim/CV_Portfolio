@@ -10,6 +10,14 @@ Bu repository, **LaTeX** tabanlı Özgeçmiş (CV) ve Portfolyo projelerinin kay
 | **CV** | English | [📥 Download (PDF)](CV/output/Ramazan_Yildirim_CV_EN.pdf) |
 | **Portfolyo** | Türkçe | [📥 İndir (PDF)](portfolio/output/Ramazan_Yildirim_Portfolyo.pdf) |
 
+## Güncel İçerik Özeti
+
+*   **Profil:** Yapay zeka, NLP ve LLM tabanlı uygulamalar ile full-stack web geliştirmeye odaklanan Bilgisayar Mühendisliği öğrencisi.
+*   **Deneyim:** RKSOFT'ta BERTurk ve WikiANN ile Türkçe NER modeli eğitimi/değerlendirmesi ve ChromaDB tabanlı vektör arama; teknik servis, geliştirme araçları ve robotik topluluğu liderliği deneyimleri.
+*   **Projeler:** Tasarım ve planlama aşamasındaki TEKNOFEST AUV çalışması ile Vue.js, Laravel ve MySQL tabanlı Dijital Diş Dünyası web platformu.
+*   **Teknik Yetenekler:** Python, C++, JavaScript/TypeScript, SQL, Bash; Laravel, Vue.js, Hugging Face Transformers; PostgreSQL, MySQL, ChromaDB; Docker, Git/GitHub ve Linux.
+*   **Yabancı Dil:** İngilizce — Temel Seviye (A2).
+
 ## 👁️ Önizlemeler
 
 <details open>
@@ -30,6 +38,8 @@ Bu repository, **LaTeX** tabanlı Özgeçmiş (CV) ve Portfolyo projelerinin kay
   <br>
   <img src="portfolio/output/preview-3.png" width="45%" alt="Sayfa 3">
   <img src="portfolio/output/preview-4.png" width="45%" alt="Sayfa 4">
+  <br>
+  <img src=portfolio/output/preview-5.png width=45% alt=Sayfa-5>
 </div>
 </details>
 

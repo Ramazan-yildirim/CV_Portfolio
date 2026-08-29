@@ -4,7 +4,7 @@
 % Sade, parse edilebilir, tek sayfa
 % ============================================
 
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 % Core Packages
 \usepackage[utf8]{inputenc}
@@ -16,7 +16,7 @@
 \usepackage{enumitem} % For better list control
 
 % Page Settings - Optimized maximize space
-\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+\geometry{left=1.3cm, right=1.3cm, top=1.2cm, bottom=1.2cm}
 \pagestyle{empty}
 
 % Hyperlink Settings (ATS Friendly)
@@ -30,7 +30,7 @@
 
 % Section Formatting
 \titleformat{\section}{\Large\bfseries}{}{0em}{}[\hrule]
-\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titlespacing*{\section}{0pt}{7pt}{4pt}
 
 % List Settings - Tighten up lists
 \setlist[itemize]{leftmargin=*, nosep}
@@ -41,10 +41,10 @@
 \input{metadata}
 \input{sections/tr/header}
 \input{sections/tr/summary}
-\input{sections/tr/education}
 \input{sections/tr/experience}
-\input{sections/tr/skills}
 \input{sections/tr/projects}
+\input{sections/tr/skills}
+\input{sections/tr/education}
 \input{sections/tr/languages}
 
 \end{document}

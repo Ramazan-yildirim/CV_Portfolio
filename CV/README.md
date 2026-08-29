@@ -1,6 +1,6 @@
 # Ramazan Yıldırım - Özgeçmiş (CV)
 
-Bilgisayar Mühendisliği öğrencisi olarak Python ve diğer modern yazılım araçlarında edindiğim tecrübelerimi, akademik geçmişimi ve profesyonel yetkinliklerimi bu dokümanda bulabilirsiniz.
+Yapay zeka, NLP ve LLM tabanlı uygulamalar ile full-stack web geliştirmeye odaklanan Bilgisayar Mühendisliği öğrencisi olarak deneyimlerimi, projelerimi ve teknik yetkinliklerimi bu dokümanda sunuyorum.
 
 ## 📄 CV İndir & İncele
 
@@ -11,13 +11,21 @@ Aşağıdaki bağlantılardan CV'min en güncel halini PDF formatında indirebil
 ## 📌 Öne Çıkanlar
 
 ### Deneyim
-*   **Acun Medya Akademi:** Yazılım Geliştirme Araçları Stajyeri (Git, Docker, CI/CD).
-*   **MAKÜ Robotik Topluluğu Başkanı:** Ekip yönetimi ve teknik proje koordinasyonu.
+*   **RKSOFT:** Python, Hugging Face Transformers, BERTurk ve WikiANN ile Türkçe NER modeli eğitimi; Precision, Recall, F1 değerlendirmeleri, hata analizi ve ChromaDB tabanlı vektör arama çalışmaları.
+*   **Burdur Mehmet Akif Ersoy Üniversitesi:** Laboratuvar bilgisayarlarında bakım, onarım, arıza tespiti ve teknik destek.
+*   **Acun Medya Akademi:** Git/GitHub, Jira, Docker ve CI/CD iş akışları.
+*   **MAKÜ Robotik Topluluğu Başkanı:** Teknik proje, etkinlik ve ekip koordinasyonu.
+
+### Projeler
+*   **TEKNOFEST Otonom Su Altı Aracı (AUV):** Sistem tasarımı araştırması; kontrol mimarisi, sensör/donanım ve Python tabanlı yazılım yaklaşımının planlanması.
+*   **Dijital Diş Dünyası:** Vue.js, Laravel ve MySQL ile geliştirilen aktif full-stack web platformu.
 
 ### Teknik Yetkinlikler
-*   **Diller:** Python, C++, JavaScript/TypeScript, SQL.
-*   **Araçlar:** Docker, Kubernetes, Git, Jira.
-*   **Frameworks:** Vue.js, Laravel, ROS 2.
+*   **Programlama:** Python, C++, JavaScript/TypeScript, SQL, Bash.
+*   **Framework / Kütüphaneler:** Laravel, Vue.js, Hugging Face Transformers, NumPy, Pandas.
+*   **Veritabanları:** PostgreSQL, MySQL, ChromaDB.
+*   **Araçlar / Platformlar:** Docker, Git/GitHub, Linux, Jira, CI/CD.
+*   **Dil:** İngilizce — Temel Seviye (A2).
 
 ## 👁️ Önizleme
 
